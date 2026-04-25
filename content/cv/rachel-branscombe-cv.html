@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rachel Branscombe CV</title>
+    <style>
+      :root {
+        --ink: #0a0a0a;
+        --muted: #55514a;
+        --paper: #f6f2e8;
+        --red: #e30613;
+        --blue: #0057b8;
+        --yellow: #ffd500;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.4;
+      }
+
+      main {
+        max-width: 760px;
+        min-height: 100vh;
+        padding: 48px;
+      }
+
+      h1 {
+        max-width: 9ch;
+        margin: 0 0 28px;
+        font-size: 72px;
+        line-height: 0.9;
+      }
+
+      h1 span {
+        display: block;
+        color: var(--red);
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 16px;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 24px;
+        padding: 20px 0;
+        border-top: 2px solid var(--ink);
+      }
+
+      .intro {
+        display: block;
+        max-width: 590px;
+        margin-bottom: 24px;
+        padding: 12px;
+        background: var(--blue);
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .detail {
+        font-weight: 700;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        padding: 8px 10px;
+        background: #fff;
+        border: 1.5px solid var(--ink);
+        font-weight: 700;
+      }
+
+      .marker {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 7px 10px;
+        background: var(--yellow);
+        color: var(--ink);
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Rachel <span>Branscombe</span></h1>
+      <p class="intro">
+        I am a graphic designer and BA (Hons) Graphic Communication graduate from the Department of
+        Typography and Graphic Communication at the University of Reading.
+      </p>
+
+      <section>
+        <h2>Education</h2>
+        <div>
+          <p class="detail">BA (Hons) Graphic Communication</p>
+          <p class="muted">Department of Typography and Graphic Communication</p>
+          <p class="muted">University of Reading</p>
+          <p class="marker">Graduate</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Focus</h2>
+        <ul>
+          <li>Branding</li>
+          <li>Editorial</li>
+          <li>UI/UX</li>
+          <li>Information design</li>
+          <li>Typography</li>
+          <li>Miscellaneous visual communication</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

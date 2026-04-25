@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Graphic design portfolio for Rachel Branscombe, built as a modular Swiss modernist site."
+    />
+    <meta name="theme-color" content="#f6f2e8" />
+    <title>Rachel Branscombe | Graphic Design Portfolio</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./content/images/swiss-portfolio-flatlay.png" as="image" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./content/site-data.js" defer></script>
+    <script src="./src/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Rachel Brans home">
+        <span class="brand-mark" aria-hidden="true">RB</span>
+        <span class="brand-wordmark">Rachel Branscombe</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Site sections"></nav>
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle color theme"
+        aria-pressed="false"
+      >
+        <span class="theme-swatch" aria-hidden="true"></span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-type">
+          <h1 id="hero-title" class="hero-title"></h1>
+          <p class="hero-copy" id="hero-copy"></p>
+          <div class="hero-actions" id="hero-actions"></div>
+        </div>
+
+        <div class="hero-media" aria-labelledby="hero-media-title">
+          <div class="media-frame">
+            <img id="hero-image" src="" alt="" />
+            <div class="pointer-target" aria-hidden="true"></div>
+            <p class="media-index" id="hero-media-title"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="work-title">Selected Work</h2>
+            <p id="work-intro"></p>
+          </div>
+        </div>
+        <div class="work-toolbar" aria-label="Project filters">
+          <div class="filter-list" id="project-filters"></div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="cv section-shell" id="cv" aria-labelledby="cv-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="cv-title">CV</h2>
+            <p id="cv-summary"></p>
+          </div>
+        </div>
+        <div class="cv-layout">
+          <div class="competencies" id="competencies"></div>
+          <div class="cv-timeline" id="cv-timeline"></div>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="contact-title">Contact</h2>
+            <p id="contact-intro"></p>
+          </div>
+        </div>
+        <div class="contact-grid" id="contact-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footer-credit"></p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close project">
+        <span aria-hidden="true">x</span>
+      </button>
+      <div class="dialog-content" id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>
